@@ -107,9 +107,9 @@ def write_sorted_numbers_to_file(filename, sorted_numbers, algorithm_name):
         file.write(f"\nSorted numbers using {algorithm_name} Sort:\n")
 
         #creating bug 1 writing list output to file without joining and mapping
-        #file.write(" ".join(map(str, sorted_numbers)) + "\n")
+        file.write(" ".join(map(str, sorted_numbers)) + "\n")
 
-        file.write(str( sorted_numbers) + "\n")   
+        #file.write(str( sorted_numbers) + "\n")   
 
 
 # mail function 
@@ -134,8 +134,8 @@ def main():
 
     # converting the sorted list to array
     # creating 1 bug [SCRUM-14] by printing list directly
-    # sorted_array_number = np.array(sorted_numbers)
-    sorted_array_number = sorted_numbers
+    sorted_array_number = np.array(sorted_numbers)
+    #sorted_array_number = sorted_numbers
     print("Sorted numbers: ", sorted_array_number)
 
 
