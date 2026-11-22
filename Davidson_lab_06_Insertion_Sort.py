@@ -101,7 +101,7 @@ def write_sorted_numbers_to_file(filename, sorted_numbers, algorithm_name):
 
 # mail function 
 def main():
-    filename = input("Enter the filename (e.g., date.txt): ").strip()
+    filename = input("Enter the filename: ").strip()
     
     # read numbers and algorithm name from the file
     line1, line2 = read_numbers_from_file(filename)
